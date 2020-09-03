@@ -5,7 +5,7 @@
 
 import unittest
 import random
-import RedBlackTree.rbtree as rbtree
+import rbtree
 
 class test_rbtree( unittest.TestCase ):
 
@@ -55,7 +55,7 @@ class test_rbtree( unittest.TestCase ):
     def test_insertions_and_then_deletions(self):
 
         NUM_INSERTS = 100000
-        NUM_DELETES =  99900
+        NUM_DELETES =  99950
 
         t01 = rbtree.RedBlackTree()
         num_list = []
