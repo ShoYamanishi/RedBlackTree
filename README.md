@@ -1,4 +1,4 @@
-# CLRS Red-black-tree algorithm in Python
+# CLRS Red-Black-Tree Algorithm in Python
 
 <a href="sample.png"> <img src="sample.png"></a>
 
@@ -42,7 +42,7 @@ while not n is t.NIL():
 
 * **draw tree** ```python t.draw('filename_wo_ext', True, 'pdf', 'vertical' )```
 
-See [unit_tests_rbtree.py](unint_tests_rbtree.py) for sample usage.
+See [unit_tests_rbtree.py](unit_tests_rbtree.py) for sample usage.
 
 
 # References
