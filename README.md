@@ -7,8 +7,12 @@ A python implementation of the Red-black-tree algorithm by Cormen, Leiserson, Ri
 I find the description by [CLRS] the most accurate, concise, and easiest to understand.
 The only two changes I made are the extra checks for NIL parameter in the beginning of LEFT_ and RIGHT_ROTATE().
 
+# Dependencies
+
+* **Graphviz** for drawing trees. Comment out import if you don't need to draw.
+
 # Usage
-See Chap. 13 & 14 [CLRS]
+See Chap. 13 & 14 in [CLRS]
 
 * **Create a Tree** ```python t = rbtree.RedBlackTree()```
 
@@ -32,7 +36,7 @@ while not n is t.NIL():
     n = t.TREE_SUCCESSOR(n)
 ```
 
-* **Iterate ascending**
+* **Iterate descending**
 
 ```python
 n = t.TREE_MAXIMUM(t.ROOT())
