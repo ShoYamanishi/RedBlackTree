@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# Red-Black tree implementation based on Introduction to Algorithms 3rd Ed., Chap 23 & 13
+# Red-Black tree implementation based on Introduction to Algorithms 3rd Ed., Chap 12 & 13
 # by Cormen, Leiserson, Rivest, and Stein.
 # Inline comments are minimum as the book gives the best explanation of each function.
 

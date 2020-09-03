@@ -51,7 +51,7 @@ while not n is t.NIL():
     print(n)
 ```
 
-* **draw tree** ```python t.draw('filename_wo_ext', True, 'pdf', 'vertical' )```
+* **draw tree** ```t.draw('filename_wo_ext', True, 'pdf', 'vertical' )```
 
 See [unit_tests_rbtree.py](unit_tests_rbtree.py) for sample usage.
 
