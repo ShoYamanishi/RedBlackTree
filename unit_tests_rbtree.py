@@ -79,6 +79,8 @@ class test_rbtree( unittest.TestCase ):
             num_list_from_min.append(n_cur._comparable)
             n_cur = t01.TREE_SUCCESSOR(n_cur)
 
+        num_list_from_iter = [n for n in t01]
+
         num_list_from_max = []
         n_cur = t01.TREE_MAXIMUM(t01.ROOT())
         while not n_cur is t01.NIL():
@@ -87,6 +89,7 @@ class test_rbtree( unittest.TestCase ):
 
         for i, n in enumerate(sorted(num_list)):
             self.assertEqual(n, num_list_from_min[i])
+            self.assertEqual(n, num_list_from_iter[i])
 
         for i, n in enumerate(sorted(num_list, reverse=True)):
             self.assertEqual(n, num_list_from_max[i])
@@ -108,6 +111,8 @@ class test_rbtree( unittest.TestCase ):
             num_list_from_min_2.append(n_cur._comparable)
             n_cur = t01.TREE_SUCCESSOR(n_cur)
 
+        num_list_from_iter_2 = [n for n in t01]
+
         num_list_from_max_2 = []
         n_cur = t01.TREE_MAXIMUM(t01.ROOT())
         while not n_cur is t01.NIL():
@@ -116,6 +121,7 @@ class test_rbtree( unittest.TestCase ):
 
         for i, n in enumerate(sorted(num_list_2)):
             self.assertEqual(n, num_list_from_min_2[i])
+            self.assertEqual(n, num_list_from_iter_2[i])
 
         for i, n in enumerate(sorted(num_list_2, reverse=True)):
             self.assertEqual(n, num_list_from_max_2[i])
@@ -163,6 +169,8 @@ class test_rbtree( unittest.TestCase ):
             num_list_from_min.append(n_cur._comparable)
             n_cur = t01.TREE_SUCCESSOR(n_cur)
 
+        num_list_from_iter = [n for n in t01]
+
         num_list_from_max = []
         n_cur = t01.TREE_MAXIMUM(t01.ROOT())
         while not n_cur is t01.NIL():
@@ -172,9 +180,11 @@ class test_rbtree( unittest.TestCase ):
         num_list = list(num_set)
         for i, n in enumerate(sorted(num_list)):
             self.assertEqual(n, num_list_from_min[i])
+            self.assertEqual(n, num_list_from_iter[i])
 
         for i, n in enumerate(sorted(num_list, reverse=True)):
             self.assertEqual(n, num_list_from_max[i])
+
 
         self.assertEqual( t01.size(), len(num_list) )
 

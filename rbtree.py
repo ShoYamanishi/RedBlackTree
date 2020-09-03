@@ -87,7 +87,7 @@ class RedBlackNode(object):
 
             yield from self.left.__iter__()
 
-        yield self.value
+        yield self._comparable
 
         if not self.right.is_nil():
 
