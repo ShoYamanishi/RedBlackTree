@@ -22,13 +22,18 @@ class test_rbtree( unittest.TestCase ):
 
         self.assertEqual( t01._T_root,       n_nil )
         self.assertEqual( t01.size(),        0     )
+        self.assertEqual( t01.ROOT(),        n_nil )
+        self.assertEqual( t01.NIL(),         n_nil )
+        num_list = [v for v in t01]
+        self.assertEqual( len(num_list),     0     )       
+
 #        t01.draw('test_empty', True, 'pdf', 'vertical' )
 
 
     def test_one_node(self):
 
         t01 = rbtree.RedBlackTree()
-        n01 = rbtree.RedBlackNode(0)
+        n01 = rbtree.RedBlackNode(1.0)
         t01.RB_INSERT(n01)
 
         self.assertEqual( t01._T_root,       n01   )
@@ -37,6 +42,11 @@ class test_rbtree( unittest.TestCase ):
         self.assertEqual( n01.right,         t01._T_nil )
 
         self.assertEqual( t01.size(),        1     )
+        self.assertEqual( t01.ROOT(),        n01   )
+        num_list = [v for v in t01]
+        self.assertEqual( len(num_list),     1     )
+        self.assertEqual( num_list[0],       1.0   )
+
 
 #        t01.draw('test_one_node', True, 'pdf', 'vertical' )
 
@@ -49,6 +59,11 @@ class test_rbtree( unittest.TestCase ):
         self.assertEqual( n01.left,          t01._T_nil )
         self.assertEqual( n01.right,         t01._T_nil )
         self.assertEqual( t01.size(),        0     )
+        self.assertEqual( t01.ROOT(),        t01._T_nil )
+        num_list = [v for v in t01]
+        self.assertEqual( len(num_list),     0     )       
+
+
 
 #        t01.draw('test_empty_again', True, 'pdf', 'vertical' )
 

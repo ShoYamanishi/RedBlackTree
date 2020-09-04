@@ -547,7 +547,7 @@ class RedBlackTree(object):
 
     def __iter__( self ):
 
-        if not self._T_root:
+        if self.NIL() is self.ROOT():
             return []
 
         yield from self._T_root.__iter__()

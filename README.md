@@ -24,9 +24,9 @@ See Chap. 13 & 14 in [CLRS]
 
 * **Root node** n = ```n = t.ROOT()```
 
-* **Minimum node** n = ```n = t.TREE_MINIMUM()```
+* **Minimum node** n = ```n = t.TREE_MINIMUM(t.ROOT())```
 
-* **Maximum node** n = ```n =  t.TREE_MAXIMUM()```
+* **Maximum node** n = ```n =  t.TREE_MAXIMUM(t.ROOT())```
 
 * **Iterate ascending**
 
