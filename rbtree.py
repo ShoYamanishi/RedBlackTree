@@ -93,6 +93,11 @@ class RedBlackNode(object):
 
             yield from self.right.__iter__()
 
+
+    def val(self):
+        return self._comparable
+
+
     def draw( self, dot, node_id ):
 
         if self.is_nil():
